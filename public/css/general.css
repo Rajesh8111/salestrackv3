@@ -1,0 +1,32 @@
+
+
+.full-height{
+    height: 100vh;
+}
+.h-100{
+    height: 100%;
+}
+.center{
+    margin:0 auto;
+}
+.middle{
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+}
+.bg-primary{
+ background: #419DA3 !important;
+}
+.bg-secondary{
+    background: #634D52 !important;
+}
+
+.text-red{
+    color: #923D3D;
+}
+.text-green{
+    color: #3A8029;
+}
+.text-amber{
+    color: #A7C457;
+}
