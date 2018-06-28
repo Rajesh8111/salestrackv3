@@ -9,7 +9,7 @@
     Call List
 </div>
 <div class="row filters">
-<div class="container">
+<!-- <div class="container">
         <form action="" class="searchFilter row search-form">
             <div class="input-group">
             <div class="input-group-prepend">
@@ -33,6 +33,29 @@
             </div>    
         </form>   
 </div>
+</div> -->
+
+<div class="input-group">
+    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div><input class="form-control" type="text" placeholder="Search Here..." /><a id="dLabel" data-toggle="dropdown" class="btn btn-primary dropdown-toggle" href>Dropdown</a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">level 1</a></li>
+        <li><a class="dropdown-item" href="#">level 1</a></li>
+        <li class="dropdown-divider"></li>
+        <li class="dropdown-submenu"><a class="dropdown-item" tabindex="-1" href="#">level 1</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" tabindex="-1" href="#">level 2</a></li>
+                <li class="dropdown-submenu"><a class="dropdown-item" href="#">level 2</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">3rd level</a></li>
+                        <li><a class="dropdown-item" href="#">3rd level</a></li>
+                    </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">level 2</a></li>
+                <li><a class="dropdown-item" href="#">level 2</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="input-group-append"><button class="btn btn-light" type="button">Search</button></div>
 </div>
 <div class="row lists">
     <div class="col-md-3">
