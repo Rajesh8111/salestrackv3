@@ -9,7 +9,7 @@
             <img class="middle center men img-fluid" src="{{ asset('images/men.png') }}" alt="">
         </div>
         <div class="col-md-3"></div>
-        <div class="col-md-4  justify-content-center">
+        <div class="col-md-5  justify-content-center">
             <div class="card middle">
                 <div class="card-header h5">Salestracker</div>
 

@@ -72,5 +72,17 @@ class CallController extends Controller
 
     }
 
+    protected function list(){
+
+        // <th>Category</th>
+        //         <th>Process Name</th>
+        //         <th>Client Name</th>
+        //         <th>Region</th>
+        //         <th >Sales SPOC</th>
+        //         <th >Status</th>
+        //         <th>Edit</th>
+        $calls = Call::where('enabled',1)->get(['category','processName','clientName','region','salesSpoc','status','id']);
+        return View::make('calls.list2')->with('calls',$calls);
+    }
 
 }
