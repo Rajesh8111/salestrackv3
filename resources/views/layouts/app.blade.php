@@ -14,8 +14,8 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+    <!-- <link rel="dns-prefetch" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css"> -->
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/general.css') }}" rel="stylesheet">
@@ -30,9 +30,14 @@
     
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="{{ asset('datepicker/js/bootstrap-datepicker.min.js') }}"></script>
+    <!-- <script src="{{ asset('jquery/js/jquery.min.js') }}"></script> -->
+    <script src="{{ asset('dataTable/js/jquery-3.3.1.js') }}"></script>
+    <script src="{{ asset('dataTable/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('dataTable/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('dataTable/js/dataTables.buttons.min.js') }}"></script>
     <script src="{{ asset('js/modal.js') }}"></script>    
+    <script src="{{ asset('datepicker/js/bootstrap-datepicker.min.js') }}"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script>
     $('#sandbox-container .input-group.date').datepicker({
@@ -43,5 +48,7 @@
         autoclose: true
     });    
 </script>
+    @yield('script')
+
 </body>
 </html>

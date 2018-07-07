@@ -33,4 +33,6 @@ Route::get('/list', function(){
     return view('calls/list');
 })->name('list')->middleware('auth');
 
+Route::get('/list2', 'CallController@list')->name('list2')->middleware('auth');
+
 Route::post('/call/add','CallController@add')->name('call/add');

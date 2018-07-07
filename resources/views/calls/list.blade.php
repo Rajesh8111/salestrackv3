@@ -4,39 +4,13 @@
 <!-- <link href="{{ asset('css/search-filter.css') }}" rel="stylesheet"> -->
 @endsection
 @section('sub_content')
-<div class="container">
-<div class="row header">
+<div class="container-fluid">
+<!-- <div class="row header">
     Call List
-</div>
-<div class="row filters">
-<!-- <div class="container">
-        <form action="" class="searchFilter row search-form">
-            <div class="input-group">
-            <div class="input-group-prepend">
-            <div class="button-group">
-            <button type="button" class="btn btn-default  dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 1</a></li>
-      <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 2</a></li>
-      <li><a href="#" class="small" data-value="option3" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 3</a></li>
-      <li><a href="#" class="small" data-value="option4" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 4</a></li>
-      <li><a href="#" class="small" data-value="option5" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 5</a></li>
-      <li><a href="#" class="small" data-value="option6" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 6</a></li>
-    </ul>
-      </div>
-            </div>
-                <input type="text" class="form-control" placeholder="Search Here...">
-                
-                <div class="input-group-append">
-                    <button class="btn btn-secondary">Search</button>
-                </div>
-            </div>    
-        </form>   
-</div>
 </div> -->
-
+<div class="row filters">
 <div class="input-group">
-    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div><input class="form-control" type="text" placeholder="Search Here..." /><a id="dLabel" data-toggle="dropdown" class="btn btn-primary dropdown-toggle" href>Dropdown</a>
+    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div><input class="form-control" type="text" placeholder="Search Here..." /><a id="dLabel" data-toggle="dropdown" class="btn btn-secondary dropdown-toggle" href>Dropdown</a>
     <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="#">level 1</a></li>
         <li><a class="dropdown-item" href="#">level 1</a></li>

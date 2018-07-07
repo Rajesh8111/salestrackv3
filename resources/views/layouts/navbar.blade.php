@@ -13,35 +13,34 @@
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="nav navbar-nav ml-auto">
   <li class="nav-item active">
-      <a class="nav-link" href="{{route('home')}}">Home</a>
+  
+      <a class="nav-link" href="{{route('home')}}">
+      <i class="material-icons">
+       home
+      </i>Home</a>
     </li>
     <li class="nav-item ">
-      <a class="nav-link" href="{{route('track')}}">Track Calls</a>
+
+      <a class="nav-link" href="{{route('track')}}">
+      <i class="material-icons">
+       phone_in_talk
+      </i>
+      Track Calls</a>
     </li>
+    <li class="nav-item ">
+
+      <a class="nav-link" href="{{route('track')}}">
+      <i class="material-icons">
+       pageview
+      </i>
+      View Calls</a>
+    </li>
+    
     <li class="nav-item dropdown Name">
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      By Category
-    </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="#">Win Telco</a>
-      <a class="dropdown-item" href="#">Win Others</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Non-Telco</a>
-      <a class="dropdown-item" href="#">Others</a>
-    </div>
-  </li>
-  <li class="nav-item dropdown Name">
-  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    By Status
-  </a>
-  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <a class="dropdown-item" href="#">Green</a>
-    <a class="dropdown-item" href="#">Red</a>
-    <a class="dropdown-item" href="#">Amber</a>
-  </div>
-</li>
-    <li class="nav-item dropdown Name">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="material-icons">
+perm_identity
+</i>
     {{{ Auth::user()->name}}}
     </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -56,5 +55,7 @@
 </div>
 </nav>
 @yield('sub_content')
+@section('script')
 @yield('sub_script')
+@endsection
 @endsection
