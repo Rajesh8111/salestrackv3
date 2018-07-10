@@ -29,7 +29,7 @@
     </li>
     <li class="nav-item ">
 
-      <a class="nav-link" href="{{route('track')}}">
+      <a class="nav-link" href="{{route('list')}}">
       <i class="material-icons">
        pageview
       </i>

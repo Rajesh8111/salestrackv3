@@ -29,10 +29,17 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::get('/list', function(){ 
-    return view('calls/list');
-})->name('list')->middleware('auth');
+// Route::get('/list', function(){ 
+//     return view('calls/list');
+// })->name('list')->middleware('auth');
 
-Route::get('/list2', 'CallController@list')->name('list2')->middleware('auth');
+Route::get('/list','CallController@list')->name('list')->middleware('auth');
 
 Route::post('/call/add','CallController@add')->name('call/add');
+
+
+Route::get('/call/edit/{id}','CallController@edit')->middleware('auth');
+
+Route::post('/call/update/{id}','CallController@update')->name('call/update')->middleware('auth');
+
+Route::get('/call/delete/{id}','CallController@delete')->middleware('auth');
