@@ -3,6 +3,7 @@
 <link href="{{ asset('css/home.css') }}" rel="stylesheet">
 @endsection
 @section('sub_content')
+<!-- {{$logs}} -->
 <div class="container-fluid main">
     <div class="row padding-around justify-content-around">
         <div class="col-md-9 ">
@@ -13,7 +14,7 @@
             <!-- Recent Activities -->
             <div class="rActivities">
                 <div class="header h4 text-center">Recent Activities</div>
-                <div class="notice notice-success">
+                <!-- <div class="notice notice-success">
                 <strong>Notice</strong> notice-success
                 </div> <div class="notice notice-danger">
                     <strong>Notice</strong> notice-danger
@@ -29,7 +30,18 @@
                 </div>
                 <div class="notice notice-sm">
                     <strong>Small notice</strong> notice-sm
-                </div>
+                </div> -->
+                @foreach($logs as $log)
+                    @if($log->action=="added")
+                    <div class="notice notice-sm notice-success">
+                    <strong>{{$log->processName}}</strong> added by {{$log->userName}}
+                    </div>
+                    @elseif($log->action=="updated")
+                    <div class="notice notice-sm notice-warning">
+                    <strong>{{$log->processName}}</strong> updated by {{$log->userName}}
+                    </div>
+                    @endif
+                @endforeach
             </div>
         </div>
     </div>
